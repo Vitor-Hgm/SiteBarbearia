@@ -50,11 +50,14 @@
             </ul>
         </nav>
 
-
     </header>
+    
+    <section>
+        <img src="imagens/banner.png" alt="Banner">
+    </section>
 
 
-    <main>
+    <main class="container">
        <?php
    
 
