@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "DM Serif Display", serif;
 }
 
 body {
-  font-family: "DM Serif Display", serif;
+  background-color: #efefef;
 }
 
 header {
@@ -35,7 +36,7 @@ nav ul {
 }
 
 nav ul {
-  margin-top: 10px;
+  
   display: flex;
   gap: 30px;
   list-style: none;
@@ -45,7 +46,6 @@ nav ul {
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.3s;
 }
 
@@ -58,6 +58,7 @@ nav ul li a:hover {
   list-style: none;
   text-decoration: none;
   font-size: 25px;
+  text-align: center;
 }
 
 .logo-header img {
@@ -73,6 +74,6 @@ nav ul li a.btn {
 }
 
 nav ul li a.btn:hover {
-  background-color: #009977;
+  background-color: #a26d22;
   color: white;
 }
