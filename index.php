@@ -19,46 +19,43 @@
     <header class="text-center">
         <nav>
             <a href="home" class="logo-header">
-                <img src="imagens/barbearialogo.png" alt="Logo" class="img">Barbearia Lk
+                <img src="imagens/barbearialogo.png" alt="Logo" class="img" width="50" height="auto">
+                <p class="mt-3">Barbearia Lk</p>
             </a>
             <ul>
-                <li>
+                <li class="text-center mt-3">
                     <a href="home">
                         Home
                     </a>
                 </li>
-                <li>
+                <li class="text-center mt-3">
                     <a href="servicos">
                         Serviços
                     </a>
                 </li>
-                <li>
+                <li class="text-center mt-3">
                     <a href="galeria">
                         Galeria
                     </a>
                 </li>
-                <li>
+                <li class="text-center mt-3">
                     <a href="contato">
                         Contato
                     </a>
                 </li>
                 <li>
-                    <a href="agendar" class="btn">
+                    <a href="#" class="botao-agendar mt-2">
+                        <span class="icone-calendario">📅</span>
                         Agendar
                     </a>
-                </li>
             </ul>
         </nav>
 
     </header>
-    
-    <section>
-        <img src="imagens/banner.png" alt="Banner">
-    </section>
 
 
     <main class="container">
-       <?php
+        <?php
    
 
    $pagina = $_GET["param"] ?? "home";
@@ -72,8 +69,8 @@
    }
     ?>
 
-
     </main>
+
 
 
     <footer>
@@ -88,7 +85,7 @@
 
         </p>
     </footer>
-    
+
 </body>
 
 </html>
