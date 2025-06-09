@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Lk</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <base href="http://localhost/sitebarbearia/barbearialk/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -24,10 +25,10 @@
             <p class="mt-2">Barbearia Lk</p>
         </a>
 
-        <a href="" class="header-menu" title="Header-menu">
+        <a href="javascript:showMenu()" class="header-menu" title="Header-menu">
             <i class="fa-solid fa-bars"></i>
         </a>
-        <nav>
+        <nav class="header-nav">
             <ul>
                 <li class="text-center mt-3">
                     <a href="home" titile="Home">
@@ -51,7 +52,6 @@
                 </li>
                 <li>
                     <a href="#" class="botao-agendar mt-2">
-                        <span class="icone-calendario">📅</span>
                         Agendar
                     </a>
                 </li>
@@ -98,15 +98,15 @@
 
             <div class="footer-section">
                 <h3>Contato</h3>
-                <p>📞 (44) 9999-9999</p>
+                <p>📞 (44) 99869-1352</p>
                 <p>✉ contato@barbeariaprtime.com</p>
                 <p>📍 Avenida Júlio José de souza, S/N<br>Alto Palmital - Boa Esperança/PR</p>
             </div>
 
             <div class="footer-section">
                 <h3>Horário de Funcionamento</h3>
-                <p>Segunda à Quarta: 09:00 - 20:00</p>
-                <p>Quinta à Sábado: 08:00 - 18:00</p>
+                <p>Segunda à Quarta: 08:00 - 12:30</p>
+                <p>Quinta à Sábado: 15:00: - 22:00</p>
                 <p>Domingos: Fechado</p>
             </div>
 
@@ -118,6 +118,17 @@
             © 2025 Barbearia LK. Todos os direitos reservados.
         </div>
     </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script>
+    AOS.init();
+
+    function showMenu() {
+        var menu = document.querySelector(".header-nav");
+        menu.classList.toggle("show");
+    }
+    </script>
 
 </body>
 
