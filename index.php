@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="botao-agendar mt-2">
+                    <a href="agendar" class="botao-agendar mt-2">
                         Agendar
                     </a>
                 </li>
