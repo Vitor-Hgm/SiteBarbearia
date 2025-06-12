@@ -51,9 +51,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="agendar" class="botao-agendar mt-2">
-                        Agendar
-                    </a>
+                    <a href="agendar" class="btn btn-gold mt-2">Agendar Horário</a>
                 </li>
             </ul>
         </nav>
@@ -87,12 +85,14 @@
                 <img src="imagens/barbearialogo.png" alt="Barbearia logo">
                 <h2>Barbearia <span>LK</span></h2>
                 <p>Estilo e tradição para homens de atitude. Mais que um corte, uma experiência completa.</p>
-                <a href="" title="instagram" target="_blank">
-                    <i class="fab fa-whatsapp"> Whatsapp</i>
-                </a>
-                <a href="" title="instagram" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
+                <div class="ico">
+                    <a href="" title="instagram" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="" title="instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
 
             </div>
 
