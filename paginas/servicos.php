@@ -1,4 +1,4 @@
-<section class="bg-black text-light py-5" style="min-height: 100vh;">
+<section class="bg-black text-light py-5 mt-4 mb-4" style="min-height: 100vh;">
   <div class="container">
     <header class="mb-5 text-center">
       <h2 class="display-4 fw-bold">

@@ -1,7 +1,7 @@
-<section class="hero-section">
-    <div class="hero-container">
-        <div class="hero-row">
-            <div class="hero-text">
+<section class="home-section mt-4">
+    <div class="container">
+        <div class="home-row">
+            <div class="home-text">
                 <h1>
                     Bem-vindo à <span class="highlight">Barbearia LK</span>
                 </h1>
@@ -53,9 +53,9 @@
 </section>
 
 
-<section class="hero-section">
-  <div class="hero-container">
-    <div class="hero-row">
+<section class="home-section mb-4">
+  <div class="container">
+    <div class="home-row">
       <div class="image-column">
         <img
           src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80"

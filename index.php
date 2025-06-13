@@ -23,7 +23,7 @@
     <header class="text-center">
         <a href="home" class="logo-header" title="Logo-header">
             <img src="imagens/barbearialogo.png" alt="Logo" class="img" width="50">
-            <p class="mt-2">Barbearia Lk</p>
+            <p class="mt-3">Barbearia Lk</p>
         </a>
 
         <a href="javascript:showMenu()" class="header-menu" title="Header-menu">

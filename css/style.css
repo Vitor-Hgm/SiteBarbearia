@@ -25,7 +25,7 @@
 body {
   background-color: var(--bg-body) !important;
   font-family: 'Roboto', sans-serif;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /* ===========================
@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 5px 55px;
   margin: 0;
   background-color: var(--bg-dark);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -75,7 +75,7 @@ header {
   display: flex;
   gap: 30px;
   list-style: none;
-  padding: 5px;
+  padding: 0px;
 }
 
 .header-nav ul li a {
@@ -109,43 +109,37 @@ header {
 /* ===========================
    Hero Section
 =========================== */
-.hero-section {
+.home-section {
   background-color: #1a1a1a;
-  padding: 60px 40px;
-  min-height: 80vh;
+  padding: 50px 30px;
+  min-height: 75vh;
   display: flex;
   align-items: center;
 }
 
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.hero-row {
+.home-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
 
-.hero-text {
+.home-text {
   width: 50%;
 }
 
-.hero-text h1 {
+.home-text h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: -1px;
 }
 
-.hero-text .highlight {
+.home-text .highlight {
   color: #ffc107;
 }
 
-.hero-text p {
+.home-text p {
   font-size: 1.2rem;
   max-width: 480px;
   margin-bottom: 30px;

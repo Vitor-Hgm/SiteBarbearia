@@ -1,4 +1,4 @@
-<section id="agendamento" class="agendamento-section">
+<section id="agendamento" class="agendamento-section mt-4 mb-4">
   <div class="agendamento-container">
     <div class="agendamento-header">
       <h2>Agendar <span class="highlight">Horário</span></h2>
