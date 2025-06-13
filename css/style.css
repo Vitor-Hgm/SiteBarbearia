@@ -197,24 +197,30 @@ footer {
   background-color: var(--bg-dark);
   color: var(--text-light);
   padding: 20px 40px;
-  border: 1px solid var(--bg-dark);
+  border-top: 1px solid var(--gold);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-section {
-  max-width: 250px;
+  flex: 1 1 200px;
+  min-width: 180px;
 }
 
 .footer-section h3,
 .footer-section h2 span {
   color: var(--gold);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .footer-section p,
@@ -223,10 +229,14 @@ footer {
   font-size: 14px;
   line-height: 1.6;
   text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .footer-section a:hover {
   text-decoration: underline;
+  color: var(--gold);
 }
 
 .footer-bottom {
@@ -234,13 +244,8 @@ footer {
   margin-top: 40px;
   color: #a0aec0;
   font-size: 13px;
+  font-style: italic;
 }
-
-footer img {
-  height: 40px;
-  vertical-align: middle;
-}
-
 .custom-container {
   max-width: 1140px;
   margin: 0 auto;
@@ -421,9 +426,7 @@ footer img {
 /* ===========================
    Responsividade (até 768px)
    =========================== */
-   @media (max-width: 768px) {
-
-  
+  @media (max-width: 768px) {
   /* Menu mobile */
   header {
     padding: 10px 15px;
