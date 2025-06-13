@@ -26,29 +26,29 @@
       <div class="col-md-6 col-lg-3">
         <div class="p-4 bg-dark rounded shadow h-100">
           <i class="bi bi-award text-warning fs-1 mb-3"></i>
-          <h5 class="fw-bold">+15 Anos de Experiência</h5>
-          <p class="mb-0">Excelência e tradição no atendimento</p>
+          <h5 class="fw-bold">Profissional Qualificado</h5>
+          <p class="mb-0">Tem Curso de Barbeiro</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="p-4 bg-dark rounded shadow h-100">
           <i class="bi bi-people text-warning fs-1 mb-3"></i>
-          <h5 class="fw-bold">+5000 Clientes Satisfeitos</h5>
-          <p class="mb-0">Nossa maior recompensa é a sua confiança</p>
+          <h5 class="fw-bold">Clientes Satisfeitos</h5>
+          <p class="mb-0">Conquista a confiança de seus clientes carisma e bom trabalho</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="p-4 bg-dark rounded shadow h-100">
           <i class="bi bi-clock text-warning fs-1 mb-3"></i>
-          <h5 class="fw-bold">Atendimento 24/7</h5>
-          <p class="mb-0">Estamos disponíveis quando você precisar</p>
+          <h5 class="fw-bold">Atendimento 6/7</h5>
+          <p class="mb-0">Atende durante 6 dias na semana</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="p-4 bg-dark rounded shadow h-100">
           <i class="bi bi-star-fill text-warning fs-1 mb-3"></i>
-          <h5 class="fw-bold">Avaliação 4.9 no Google</h5>
-          <p class="mb-0">Clientes que recomendam nossa qualidade</p>
+          <h5 class="fw-bold">Avaliação</h5>
+          <p class="mb-0">Recomendado por todos que já foram em sua barbearia</p>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
           Nossa barbearia oferece um espaço moderno, confortável e acolhedor para você relaxar enquanto cuidamos do seu visual.
         </p>
         <p class="mb-4">
-          Com profissionais dedicados e uma equipe apaixonada pelo que faz, garantimos um atendimento exclusivo que vai além do corte.
+          Com um profissional dedicado e apaixonado pelo que faz, garantimos um atendimento exclusivo que vai além do corte.
         </p>
         <a href="servicos" class="btn btn-warning">Conheça nossos serviços</a>
       </div>

@@ -80,45 +80,58 @@
     </main>
 
 
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
 
-    <footer>
-        <div class="footer-container p-5">
-
-            <div class="footer-section">
-                <h2>Barbearia <span>LK</span></h2>
-                <p>Estilo e tradição para homens de atitude. Mais que um corte, uma experiência completa.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-warning fs-5" aria-label="Instagram"><i class="bi bi-instagram"
-                            target="_blank"></i></a>
-                    <a href="#" class="text-warning fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"
-                            target="_blank"></i></a>
-                </div>
-
-            </div>
-
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <p><i class="fa-solid fa-phone"></i> (44) 99869-1352</p>
-                <p><i class="fa-solid fa-envelope"></i></p>
-                <p><i class="fas fa-map-marker-alt"></i> Avenida Júlio José de souza, S/N<br>Alto Palmital - Boa
-                    Esperança/PR</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Horário de Funcionamento</h3>
-                <p>Segunda à Quarta: 08:00 - 12:30</p>
-                <p>Quinta à Sábado: 15:00: - 22:00</p>
-                <p>Domingos: Fechado</p>
-            </div>
-
+      <!-- Logo e Redes Sociais -->
+      <div class="col-md-4 mb-4">
+        <h2 class="fw-bold text-warning">Barbearia <span class="text-light">LK</span></h2>
+        <p class="small">
+          Estilo e tradição para homens de atitude.<br>Mais que um corte, uma experiência completa.
+        </p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+          <a href="#" class="text-warning fs-4" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-warning fs-4" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-          <hr class="border-warning">
-            © 2025 Barbearia LK. Todos os direitos reservados.
-        </div>
-    </footer>
+      <!-- Contato -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning fw-bold mb-3">Contato</h5>
+        <p class="mb-1"><i class="fa-solid fa-phone me-2 text-warning"></i>(44) 99869-1352</p>
+        <p class="mb-1"><i class="fa-solid fa-envelope me-2 text-warning"></i>contato@barbearialk.com</p>
+        <p><i class="fa-solid fa-location-dot me-2 text-warning"></i>Avenida Júlio José de Souza, S/N<br>Alto Palmital - Boa Esperança/PR</p>
+      </div>
 
+      <!-- Horário -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning fw-bold mb-3">Horário de Funcionamento</h5>
+        <p class="mb-1">Segunda à Quarta: 08:00 - 12:30</p>
+        <p class="mb-1">Quinta à Sábado: 15:00 - 22:00</p>
+        <p class="mb-0">Domingos: Fechado</p>
+      </div>
+    </div>
+
+    <hr class="border-warning">
+
+    <!-- Rodapé Inferior -->
+    <div class="text-center pb-3 small">
+      © 2025 <span class="text-warning">Barbearia LK</span>. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<style>
+    footer a {
+        color: #FFC107;
+        text-decoration:none;
+        transition: color 0.3 ease;
+    }
+    footer a:hover {
+        color : #fffffff;
+    }
+</style>
     <script src="js/aos.js"></script>
     <script src="js/fslightbox.js"></script>
     <script>

@@ -1,3 +1,39 @@
+<?php
+// Variáveis de controle
+$mensagemEnviada = false;
+$erroEnvio = '';
+
+// Processa o formulário
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $nome = trim($_POST["nome"] ?? '');
+    $email = trim($_POST["email"] ?? '');
+    $mensagem = trim($_POST["mensagem"] ?? '');
+
+    // Validação
+    if (empty($nome) || empty($email) || empty($mensagem)) {
+        $erroEnvio = "Todos os campos são obrigatórios.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $erroEnvio = "E-mail inválido.";
+    } else {
+        // Dados do e-mail
+        $destinatario = "seuemail@seudominio.com"; // Altere para seu e-mail
+        $assunto = "Mensagem do site";
+        $corpo = "Nome: $nome\n";
+        $corpo .= "E-mail: $email\n";
+        $corpo .= "Mensagem:\n$mensagem";
+
+        $headers = "From: $email\r\nReply-To: $email\r\n";
+
+        // Envia o e-mail
+        if (mail($destinatario, $assunto, $corpo, $headers)) {
+            $mensagemEnviada = true;
+        } else {
+            $erroEnvio = "Erro ao enviar a mensagem. Tente novamente mais tarde.";
+        }
+    }
+}
+?>
+
 <section class="bg-black text-light py-5 mt-4 mb-4" style="min-height: 100vh;">
   <div class="container" style="max-width: 600px;">
     <h2 class="display-4 text-center fw-bold mb-4">Fale <span class="text-warning">Conosco</span></h2>
