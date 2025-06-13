@@ -26,10 +26,11 @@
               <label for="service">Serviço</label>
               <select id="service" name="service" required>
                 <option value="" disabled selected>Selecione um serviço</option>
-                <option value="Corte Masculino">Corte Masculino</option>
+                <option value="Corte Masculino">Corte Social</option>
+                <option value="Corte Masculino">Corte Degradê</option>
                 <option value="Barba Completa">Barba Completa</option>
                 <option value="Sobrancelha">Sobrancelha</option>
-                <option value="Hidratação Capilar">Hidratação Capilar</option>
+                <option value="Paltinado">Platinado</option>
                 <option value="Corte + Barba">Corte + Barba</option>
               </select>
             </div>

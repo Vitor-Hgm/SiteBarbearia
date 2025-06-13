@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Lk</title>
     <link rel="stylesheet" href="css/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <base href="http://localhost/sitebarbearia/barbearialk/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -58,21 +59,19 @@
 
     </header>
 
-
     <main class="container">
         <?php
    
+    $pagina = $_GET["param"] ?? "home";
+    $pagina = "paginas/{$pagina}.php";
 
-   $pagina = $_GET["param"] ?? "home";
-
-   $pagina = "paginas/{$pagina}.php";
-
-   if (file_exists($pagina)) {
+    if (file_exists($pagina)) {
        include $pagina;
    } else {
        include "paginas/erro.php";
    }
-    ?>
+
+?>
 
     </main>
 
@@ -85,22 +84,21 @@
                 <img src="imagens/barbearialogo.png" alt="Barbearia logo">
                 <h2>Barbearia <span>LK</span></h2>
                 <p>Estilo e tradição para homens de atitude. Mais que um corte, uma experiência completa.</p>
-                <div class="ico">
-                    <a href="" title="instagram" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="" title="instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-warning fs-5" aria-label="Instagram"><i class="bi bi-instagram"
+                            target="_blank"></i></a>
+                    <a href="#" class="text-warning fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"
+                            target="_blank"></i></a>
                 </div>
 
             </div>
 
             <div class="footer-section">
                 <h3>Contato</h3>
-                <p>📞 (44) 99869-1352</p>
-                <p>✉ contato@barbeariaprtime.com</p>
-                <p>📍 Avenida Júlio José de souza, S/N<br>Alto Palmital - Boa Esperança/PR</p>
+                <p><i class="fa-solid fa-phone"></i> (44) 99869-1352</p>
+                <p><i class="fa-solid fa-envelope"></i></p>
+                <p><i class="fas fa-map-marker-alt"></i> Avenida Júlio José de souza, S/N<br>Alto Palmital - Boa
+                    Esperança/PR</p>
             </div>
 
             <div class="footer-section">

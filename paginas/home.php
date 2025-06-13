@@ -8,10 +8,10 @@
                 <p>
                     A barbearia que une tradição e inovação para transformar seu estilo com sofisticação e cuidado.
                 </p>
-                <a href="agendar" class="hero-btn">Agende seu horário</a>
+                <a href="agendar" class="btn btn-warning">Agende seu horário</a>
             </div>
             <div class="hero-image">
-                <img src="imagens/foto1.png" alt="Barbeiro estiloso">
+                <img src="imagens/clientecorte.jpg" alt="Barbeiro estiloso">
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
         <p class="section-text">
           Com profissionais dedicados e uma equipe apaixonada pelo que faz, garantimos um atendimento exclusivo que vai além do corte.
         </p>
-        <a href="?param=servicos" class="custom-btn">Conheça nossos serviços</a>
+        <a href="servicos" class="btn btn-warning">Conheça nossos serviços</a>
       </div>
     </div>
   </div>
