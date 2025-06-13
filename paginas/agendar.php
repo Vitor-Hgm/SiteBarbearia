@@ -57,7 +57,7 @@
               </select>
             </div>
 
-            <button type="submit" class="submit-btn">Solicitar Agendamento</button>
+            <button type="submit" class="btn btn-lg d-block mx-auto btn-warning px-5 fw-semibold shadow-lg">Solicitar Agendamento</button>
           </form>
         </div>
       </div>

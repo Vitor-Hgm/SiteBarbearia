@@ -58,9 +58,12 @@
         </nav>
 
     </header>
-
+    
     <main class="container">
-        <?php
+    
+    <?php
+    
+    
    
     $pagina = $_GET["param"] ?? "home";
     $pagina = "paginas/{$pagina}.php";
@@ -81,7 +84,6 @@
         <div class="footer-container">
 
             <div class="footer-section">
-                <img src="imagens/barbearialogo.png" alt="Barbearia logo">
                 <h2>Barbearia <span>LK</span></h2>
                 <p>Estilo e tradição para homens de atitude. Mais que um corte, uma experiência completa.</p>
                 <div class="d-flex gap-3">

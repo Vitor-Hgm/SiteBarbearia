@@ -122,7 +122,7 @@
     <hr class="my-5 border-warning opacity-50">
 
     <div class="text-center">
-      <h3 class="fw-bold mb-3">Por que escolher a <span class="text-warning">Estilo Fino</span>?</h3>
+      <h3 class="fw-bold mb-3">Por que escolher a <span class="text-warning">Barbearia LK</span>?</h3>
       <p class="fs-5 mx-auto" style="max-width: 700px;">
         Além da técnica apurada, oferecemos atendimento exclusivo e ambiente acolhedor para você relaxar e se transformar com estilo e segurança.
       </p>
