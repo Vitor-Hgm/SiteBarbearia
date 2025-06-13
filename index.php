@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Lk</title>
     <link rel="stylesheet" href="css/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <base href="http://localhost/sitebarbearia/barbearialk/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -58,10 +59,10 @@
         </nav>
 
     </header>
-    
+
     <main class="container">
-    
-    <?php
+
+        <?php
     
     
    
@@ -81,7 +82,7 @@
 
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container p-5">
 
             <div class="footer-section">
                 <h2>Barbearia <span>LK</span></h2>
@@ -112,9 +113,8 @@
 
         </div>
 
-        </div>
-
         <div class="footer-bottom">
+          <hr class="border-warning">
             © 2025 Barbearia LK. Todos os direitos reservados.
         </div>
     </footer>
