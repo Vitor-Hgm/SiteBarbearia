@@ -19,6 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+<style>
+  /* testando o commit apenas  */
+</style>
 
 <body>
     <header class="text-center">
