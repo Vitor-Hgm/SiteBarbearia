@@ -70,6 +70,7 @@
     </div>
   </div>
 </section>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form-agendamento");
@@ -97,5 +98,5 @@
         return true;
       }
     }
-  });
+  });
 </script>

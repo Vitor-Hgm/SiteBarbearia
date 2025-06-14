@@ -1,31 +1,47 @@
 <section class="bg-black text-light py-5" style="min-height: 90vh;">
-  <div class="container">
-    <div class="row align-items-center justify-content-center" style="min-height: 80vh;">
-      
-    <!-- Foto do Alex -->
-<div class="col-md-5 text-center mb-4 mb-md-0" data-aos="fade-right">
-  <img src="imagens/eu.png" alt="Alex Martins" class="img-fluid rounded shadow-lg" style="max-height: 450px; object-fit: cover;">
-  <!-- DICA: certifique-se de que o arquivo "eu.jpg" esteja na mesma pasta que este arquivo HTML -->
-</div>
-cadsfasasasd
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 90vh;">
+    
+    <h2 class="display-4 fw-bold mb-4" data-aos="fade-down" data-aos-delay="100">
+      Sobre a <span class="text-warning">Barbearia LK</span>
+    </h2>
+    
+    <p class="fs-5 mb-3 text-muted" style="max-width: 600px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="200">
+      Há mais de <strong>15 anos</strong>, a <strong>Barbearia LK</strong> é referência em cortes masculinos, barbas elaboradas e atendimento personalizado. Nossa missão é elevar sua autoestima e estilo com um toque de sofisticação.
+    </p>
 
-      <!-- Texto sobre o Alex -->
-      <div class="col-md-7 text-center text-md-start" data-aos="fade-left">
-        <h2 class="display-5 fw-bold mb-3">
-          Conheça <span class="text-warning">Alex Martins</span>
-        </h2>
-        <p class="fs-5 text-muted" style="line-height: 1.6;">
-          Fundador da <strong>Barbearia LK</strong>, Alex iniciou sua carreira há apenas <strong>2 anos</strong> com uma visão ousada: transformar cada corte em uma experiência de estilo e confiança.
-        </p>
-        <p class="fs-5">
-          Além de seu trabalho na barbearia, Alex também atua em um posto de gasolina, mostrando sua dedicação, disciplina e vontade incansável de crescer. Sua meta é clara: conquistar muito mais!
-        </p>
-        <a href="?param=agendamento" class="btn btn-warning btn-lg px-5 fw-semibold shadow-sm mt-3">
-          Agende com Alex
-        </a>
+    <p class="fs-5 mb-4" style="max-width: 600px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="300">
+      Com uma equipe experiente e apaixonada, unimos técnicas tradicionais e modernas para garantir um resultado impecável em cada atendimento.
+    </p>
+
+    <a href="?param=agendamento" class="btn btn-warning btn-lg px-5 fw-semibold shadow-sm mb-5" data-aos="zoom-in" data-aos-delay="400">
+      Agende seu horário
+    </a>
+
+    <hr class="my-5 border-warning opacity-50 w-100" style="max-width: 600px;" data-aos="fade" data-aos-delay="500">
+
+    <div class="row text-center g-4" style="max-width: 820px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+        <i class="bi bi-award-fill text-warning fs-1 mb-3"></i>
+        <h5 class="fw-bold mb-1">+15 Anos</h5>
+        <p class="text-muted small mb-0">de experiência</p>
       </div>
-
+      <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+        <i class="bi bi-people-fill text-warning fs-1 mb-3"></i>
+        <h5 class="fw-bold mb-1">+5.000</h5>
+        <p class="text-muted small mb-0">clientes satisfeitos</p>
+      </div>
+      <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+        <i class="bi bi-clock-history text-warning fs-1 mb-3"></i>
+        <h5 class="fw-bold mb-1">Seg a Sáb</h5>
+        <p class="text-muted small mb-0">Atendimento</p>
+      </div>
+      <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+        <i class="bi bi-star-fill text-warning fs-1 mb-3"></i>
+        <h5 class="fw-bold mb-1">Avaliação 4.9</h5>
+        <p class="text-muted small mb-0">no Google</p>
+      </div>
     </div>
+
   </div>
 
   <!-- AOS CSS & JS CDN -->
