@@ -10,113 +10,29 @@
     </header>
 
     <div class="row g-4">
-      <!-- Serviço 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-scissors"></i>
-            </div>
-            <h5 class="card-title text-warning fw-bold">Corte Masculino</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Técnicas modernas e clássicas para cortes personalizados que combinam com seu estilo e personalidade.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Corte
-            </a>
-          </div>
-        </div>
-      </div>
+      <?php 
+      $servicos = [
+        ["icon" => "bi-scissors", "titulo" => "Corte Masculino", "desc" => "Técnicas modernas e clássicas para cortes personalizados que combinam com seu estilo e personalidade."],
+        ["icon" => "bi-brush", "titulo" => "Barba & Estilo", "desc" => "Modelagem, aparo e tratamentos para manter sua barba impecável e com um toque sofisticado."],
+        ["icon" => "bi-droplet", "titulo" => "Tratamentos Capilares", "desc" => "Hidratação, revitalização e cuidados para cabelos saudáveis, fortes e com brilho natural."],
+        ["icon" => "bi-emoji-smile", "titulo" => "Design de Sobrancelha", "desc" => "Serviço especializado para deixar suas sobrancelhas alinhadas e harmoniosas."],
+        ["icon" => "bi-person-check", "titulo" => "Consultoria de Estilo", "desc" => "Consultoria personalizada para ajudar você a escolher o visual perfeito para cada ocasião."],
+        ["icon" => "bi-clock-history", "titulo" => "Atendimento 24/7", "desc" => "Estamos sempre prontos para atender você, com agendamento flexível e dedicação total."],
+      ];
 
-      <!-- Serviço 2 -->
+      foreach($servicos as $s): ?>
       <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-brush"></i>
+        <div class="card bg-dark border-warning shadow-lg h-100 service-card">
+          <div class="card-body d-flex flex-column text-center">
+            <div class="mb-4 text-warning fs-1 icon-container">
+              <i class="bi <?= $s['icon'] ?>"></i>
             </div>
-            <h5 class="card-title text-warning fw-bold">Barba & Estilo</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Modelagem, aparo e tratamentos para manter sua barba impecável e com um toque sofisticado.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Barba
-            </a>
+            <h5 class="card-title text-warning fw-bold mb-3"><?= $s['titulo'] ?></h5>
+            <p class="card-text text-muted flex-grow-1 px-3"><?= $s['desc'] ?></p>
           </div>
         </div>
       </div>
-
-      <!-- Serviço 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-droplet"></i>
-            </div>
-            <h5 class="card-title text-warning fw-bold">Tratamentos Capilares</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Hidratação, revitalização e cuidados para cabelos saudáveis, fortes e com brilho natural.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Tratamento
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Serviço 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-emoji-smile"></i>
-            </div>
-            <h5 class="card-title text-warning fw-bold">Design de Sobrancelha</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Serviço especializado para deixar suas sobrancelhas alinhadas e harmoniosas.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Design
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Serviço 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-person-check"></i>
-            </div>
-            <h5 class="card-title text-warning fw-bold">Consultoria de Estilo</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Consultoria personalizada para ajudar você a escolher o visual perfeito para cada ocasião.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Consultoria
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Serviço 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card bg-dark border-warning shadow-lg h-100">
-          <div class="card-body d-flex flex-column">
-            <div class="mb-3 text-warning fs-1 text-center">
-              <i class="bi bi-clock-history"></i>
-            </div>
-            <h5 class="card-title text-warning fw-bold">Atendimento 24/7</h5>
-            <p class="card-text text-muted flex-grow-1">
-              Estamos sempre prontos para atender você, com agendamento flexível e dedicação total.
-            </p>
-            <a href="?param=agendamento" class="btn btn-warning mt-auto align-self-center px-4 fw-semibold">
-              Agendar Agora
-            </a>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
 
     <hr class="my-5 border-warning opacity-50">
@@ -126,9 +42,42 @@
       <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
         Além da técnica apurada, oferecemos atendimento exclusivo e ambiente acolhedor para você relaxar e se transformar com estilo e segurança.
       </p>
-      <a href="?param=agendamento" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg mt-3">
+      <a href="?param=agendamento" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg mt-3 hover-grow">
         Agende seu horário agora
       </a>
     </div>
   </div>
+
+  <style>
+    .service-card {
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      padding-bottom: 2rem; /* Espaço extra pra evitar compactação */
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(245, 185, 66, 0.6);
+      cursor: pointer;
+    }
+
+    .icon-container i {
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover .icon-container i {
+      transform: scale(1.2) rotate(10deg);
+    }
+
+    /* Remove estilo do botão pois eles não existem mais */
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .service-card {
+        border-radius: 12px;
+      }
+      .icon-container i {
+        font-size: 3.5rem !important;
+      }
+    }
+  </style>
 </section>

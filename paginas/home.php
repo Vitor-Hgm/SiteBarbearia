@@ -67,3 +67,40 @@
     </a>
   </div>
 </section>
+<style>
+  .pulse-hover {
+  transition: transform 0.3s ease;
+}
+.pulse-hover:hover {
+  transform: scale(1.05);
+}
+
+.feature-card {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+  height: 100%;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 575px) {
+  h1.display-3 {
+    font-size: 2.2rem;
+  }
+  p.lead, p.fs-5 {
+    font-size: 1.1rem;
+    max-width: 100% !important;
+  }
+  .btn-lg {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    font-size: 1.2rem;
+  }
+}
+
+</style>
