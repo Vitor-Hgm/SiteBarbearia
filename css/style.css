@@ -435,6 +435,7 @@ footer {
     top: 0;
     left: 0;
     z-index: 9;
+    margin: auto;
   }
   
   .header-menu {
@@ -566,4 +567,22 @@ footer {
     font-size: 1rem;
     padding: 12px;
   }
+}
+/* para telas maiores  */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+/* para telas menores  */
+@media (max-width: 568px) {
+ .container {
+    width: 100%;
+    padding: 5px;
+  }
+  h1 {
+  font-size: 20px;
+}
+
 }

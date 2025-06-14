@@ -129,7 +129,7 @@
         transition: color 0.3 ease;
     }
     footer a:hover {
-        color : #fffffff;
+        color : #fffffff
     }
 </style>
     <script src="js/aos.js"></script>
