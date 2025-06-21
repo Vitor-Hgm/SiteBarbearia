@@ -7,7 +7,7 @@
     <p class="lead fs-5 mb-4 mx-auto" style="max-width: 640px;">
       Tradição e inovação unidas para transformar seu visual com excelência e estilo.
     </p>
-    <a href="?param=agendamento" class="btn btn-warning btn-lg px-5 fw-semibold shadow pulse-hover">
+    <a href="agendamento" class="btn btn-warning btn-lg px-5 fw-semibold shadow pulse-hover">
       Agende seu horário
     </a>
   </div>
@@ -45,7 +45,7 @@
         <div class="feature-card">
           <i class="bi bi-star-fill text-warning fs-1 mb-3"></i>
           <h5 class="fw-bold mb-2">Avaliações Positivas</h5>
-          <p class="text-muted small mb-0">Clientes que recomendam nossa qualidade</p>
+          <p class="text-muted small mb-0">Clientes recomendam nossa qualidade</p>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <p class="fs-5 mx-auto" style="max-width: 650px;">
       Profissionais dedicados e apaixonados pelo que fazem, garantindo um atendimento exclusivo do início ao fim.
     </p>
-    <a href="?param=servicos" class="btn btn-outline-warning mt-3 px-4 fw-semibold">
+    <a href="servicos" class="btn btn-outline-warning mt-3 px-4 fw-semibold">
       Conheça nossos serviços
     </a>
   </div>

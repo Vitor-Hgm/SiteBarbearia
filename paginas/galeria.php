@@ -17,7 +17,12 @@
         ["src" => "fotos/foto3.jpg", "alt" => "Foto 3"],
         ["src" => "fotos/foto4.jpg", "alt" => "Foto 4"],
         ["src" => "fotos/foto5.jpg", "alt" => "Foto 5"],
-        ["src" => "fotos/foto6.jpg", "alt" => "Foto 6"]
+        ["src" => "fotos/foto6.jpg", "alt" => "Foto 6"],
+        ["src" => "fotos/foto7.jpg", "alt" => "Foto 7"],
+        ["src" => "fotos/foto8.jpg", "alt" => "Foto 8"],
+        ["src" => "fotos/foto9.jpg", "alt" => "Foto 9"],
+        ["src" => "fotos/foto10.jpg", "alt" => "Foto 10"],
+        
       ];
       foreach ($imagens as $index => $img): ?>
         <div class="col-sm-6 col-md-4 col-lg-3">

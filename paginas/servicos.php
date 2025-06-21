@@ -11,14 +11,7 @@
 
     <div class="row g-4">
       <?php 
-      $servicos = [
-        ["icon" => "bi-scissors", "titulo" => "Corte Masculino", "desc" => "Técnicas modernas e clássicas para cortes personalizados que combinam com seu estilo e personalidade."],
-        ["icon" => "bi-brush", "titulo" => "Barba & Estilo", "desc" => "Modelagem, aparo e tratamentos para manter sua barba impecável e com um toque sofisticado."],
-        ["icon" => "bi-droplet", "titulo" => "Tratamentos Capilares", "desc" => "Hidratação, revitalização e cuidados para cabelos saudáveis, fortes e com brilho natural."],
-        ["icon" => "bi-emoji-smile", "titulo" => "Design de Sobrancelha", "desc" => "Serviço especializado para deixar suas sobrancelhas alinhadas e harmoniosas."],
-        ["icon" => "bi-person-check", "titulo" => "Consultoria de Estilo", "desc" => "Consultoria personalizada para ajudar você a escolher o visual perfeito para cada ocasião."],
-        ["icon" => "bi-clock-history", "titulo" => "Atendimento 24/7", "desc" => "Estamos sempre prontos para atender você, com agendamento flexível e dedicação total."],
-      ];
+      include "paginas/array.php";
 
       foreach($servicos as $s): ?>
       <div class="col-md-6 col-lg-4">
@@ -38,7 +31,7 @@
     <hr class="my-5 border-warning opacity-50">
 
     <div class="text-center">
-      <h3 class="fw-bold mb-3">Por que escolher a <span class="text-warning">Estilo Fino</span>?</h3>
+      <h3 class="fw-bold mb-3">Por que escolher a <span class="text-warning">Barbearia LK</span>?</h3>
       <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
         Além da técnica apurada, oferecemos atendimento exclusivo e ambiente acolhedor para você relaxar e se transformar com estilo e segurança.
       </p>

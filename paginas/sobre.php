@@ -6,28 +6,28 @@
     </h2>
     
     <p class="fs-5 mb-3 text-muted" style="max-width: 600px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="200">
-      Há mais de <strong>15 anos</strong>, a <strong>Barbearia LK</strong> é referência em cortes masculinos, barbas elaboradas e atendimento personalizado. Nossa missão é elevar sua autoestima e estilo com um toque de sofisticação.
+      Há <strong>2 anos</strong>, a <strong>Barbearia LK</strong> é referência em cortes masculinos, barbas e atendimento personalizado. Nossa missão é elevar sua autoestima e estilo com um toque de sofisticação.
     </p>
 
     <p class="fs-5 mb-4" style="max-width: 600px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="300">
-      Com uma equipe experiente e apaixonada, unimos técnicas tradicionais e modernas para garantir um resultado impecável em cada atendimento.
+      Um profissional apaixonado pela profissão, utilizando técnicas tradicionais e modernas para garantir um resultado impecável em cada atendimento.
     </p>
 
     <a href="?param=agendamento" class="btn btn-warning btn-lg px-5 fw-semibold shadow-sm mb-5" data-aos="zoom-in" data-aos-delay="400">
       Agende seu horário
     </a>
 
-    <hr class="my-5 border-warning opacity-50 w-100" style="max-width: 600px;" data-aos="fade" data-aos-delay="500">
+    <hr class="my-3 border-warning opacity-50 w-100" style="max-width: 600px;" data-aos="fade" data-aos-delay="500">
 
     <div class="row text-center g-4" style="max-width: 820px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="600">
       <div class="col-6 col-md-3 d-flex flex-column align-items-center">
         <i class="bi bi-award-fill text-warning fs-1 mb-3"></i>
-        <h5 class="fw-bold mb-1">+15 Anos</h5>
+        <h5 class="fw-bold mb-1">2 Anos</h5>
         <p class="text-muted small mb-0">de experiência</p>
       </div>
       <div class="col-6 col-md-3 d-flex flex-column align-items-center">
         <i class="bi bi-people-fill text-warning fs-1 mb-3"></i>
-        <h5 class="fw-bold mb-1">+5.000</h5>
+        <h5 class="fw-bold mb-1">+100</h5>
         <p class="text-muted small mb-0">clientes satisfeitos</p>
       </div>
       <div class="col-6 col-md-3 d-flex flex-column align-items-center">
@@ -37,10 +37,9 @@
       </div>
       <div class="col-6 col-md-3 d-flex flex-column align-items-center">
         <i class="bi bi-star-fill text-warning fs-1 mb-3"></i>
-        <h5 class="fw-bold mb-1">Avaliação 4.9</h5>
-        <p class="text-muted small mb-0">no Google</p>
+        <h5 class="fw-bold mb-1">Avaliação Positiva</h5>
+        <p class="text-muted small mb-0">dos Clientes</p>
       </div>
-    </div>
 
   </div>
 
