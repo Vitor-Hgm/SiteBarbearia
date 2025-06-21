@@ -12,15 +12,14 @@
     <div class="row g-4">
       <?php
       $imagens = [
-        ["src" => "imagens/foto1.jpg", "alt" => "Foto 1"],
-        ["src" => "imagens/foto2.jpg", "alt" => "Foto 2"],
-        ["src" => "imagens/foto3.jpg", "alt" => "Foto 3"],
-        ["src" => "imagens/foto4.jpg", "alt" => "Foto 4"],
-        ["src" => "imagens/foto5.jpg", "alt" => "Foto 5"],
-        ["src" => "imagens/foto6.jpg", "alt" => "Foto 6"],
-        // continue suas imagens...
+        ["src" => "fotos/foto.jpg", "alt" => "Foto 1"],
+        ["src" => "fotos/foto2.jpg", "alt" => "Foto 2"],
+        ["src" => "fotos/foto3.jpg", "alt" => "Foto 3"],
+        ["src" => "fotos/foto4.jpg", "alt" => "Foto 4"],
+        ["src" => "fotos/foto5.jpg", "alt" => "Foto 5"],
+        ["src" => "fotos/foto6.jpg", "alt" => "Foto 6"]
       ];
-      foreach ($imagens as $index => $img) : ?>
+      foreach ($imagens as $index => $img): ?>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card bg-dark border-warning shadow-sm gallery-card" style="cursor: pointer;"
                data-bs-toggle="modal" data-bs-target="#modalCarousel" data-bs-slide-to="<?= $index ?>">
@@ -31,7 +30,7 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="?param=contato" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg">
+      <a href="?param=contato" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg" role="button">
         Quer agendar? Fale conosco!
       </a>
     </div>
@@ -49,14 +48,13 @@
       <div class="modal-body p-0 position-relative">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
           <div class="carousel-inner">
-            <?php foreach ($imagens as $index => $img) : ?>
+            <?php foreach ($imagens as $index => $img): ?>
               <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
                 <img src="<?= $img['src'] ?>" class="d-block w-100 rounded-bottom carousel-clickable" alt="<?= htmlspecialchars($img['alt']) ?>"
                      style="height: 500px; object-fit: contain; cursor: pointer;">
               </div>
             <?php endforeach; ?>
           </div>
-          <!-- Setas podem ficar, mas usuário pode ignorar -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
@@ -71,40 +69,7 @@
   </div>
 </div>
 
-<script>
-  const modalCarousel = document.getElementById('modalCarousel');
-  const carouselElement = document.getElementById('carouselExampleIndicators');
-  const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
-
-  // Abre no slide clicado (igual antes)
-  modalCarousel.addEventListener('show.bs.modal', (event) => {
-    const trigger = event.relatedTarget;
-    if (!trigger) return;
-
-    const slideTo = trigger.getAttribute('data-bs-slide-to');
-    if (slideTo !== null) {
-      bsCarousel.to(parseInt(slideTo));
-    }
-  });
-
-  // Ao clicar na imagem dentro do modal, avança para o próximo slide
-  // Se for o último slide, volta para o primeiro
-  carouselElement.querySelectorAll('.carousel-clickable').forEach(img => {
-    img.addEventListener('click', () => {
-      const totalItems = carouselElement.querySelectorAll('.carousel-item').length;
-      const activeIndex = Array.from(carouselElement.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
-
-      let nextIndex = activeIndex + 1;
-      if (nextIndex >= totalItems) {
-        nextIndex = 0; // volta para a primeira imagem
-      }
-
-      bsCarousel.to(nextIndex);
-    });
-  });
-</script>
-
-
+<!-- Estilo da Galeria -->
 <style>
   .gallery-card img {
     width: 100%;
@@ -119,21 +84,19 @@
     box-shadow: 0 10px 20px rgba(245, 185, 66, 0.7);
   }
 
-  /* Efeito de "diminuir" na imagem quando clicar */
   .gallery-card:active img {
     transform: scale(0.95);
     transition: transform 0.2s ease;
   }
 </style>
 
+<!-- Script do Carrossel -->
 <script>
-  // Quando o modal abre, altera o slide do carrossel para a imagem clicada
   const modalCarousel = document.getElementById('modalCarousel');
-  const carousel = document.getElementById('carouselExampleIndicators');
-  const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+  const carouselElement = document.getElementById('carouselExampleIndicators');
+  const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
 
   modalCarousel.addEventListener('show.bs.modal', (event) => {
-    // pega o botão/card que disparou o modal
     const trigger = event.relatedTarget;
     if (!trigger) return;
 
@@ -141,5 +104,17 @@
     if (slideTo !== null) {
       bsCarousel.to(parseInt(slideTo));
     }
+  });
+
+  carouselElement.querySelectorAll('.carousel-clickable').forEach(img => {
+    img.addEventListener('click', () => {
+      const totalItems = carouselElement.querySelectorAll('.carousel-item').length;
+      const activeIndex = Array.from(carouselElement.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
+
+      let nextIndex = activeIndex + 1;
+      if (nextIndex >= totalItems) nextIndex = 0;
+
+      bsCarousel.to(nextIndex);
+    });
   });
 </script>

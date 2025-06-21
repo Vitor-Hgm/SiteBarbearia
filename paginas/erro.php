@@ -42,9 +42,9 @@
     </style>
 </head>
 <body>
-    <h1>Erro 404!</h1>
+    <h1 class="mt-5">Erro 404!</h1>
     <div class="container">
-        <img src="imagens/erro.webp" alt="Erro 404" class="img-erro">
+        <img src="imagens/erro.png" alt="Erro 404" class="img-erro">
         <p class="mensagem">
             A página que você está procurando não existe ou foi removida!
             <br>
@@ -55,3 +55,4 @@
     </div>
 </body>
 </html>
+        

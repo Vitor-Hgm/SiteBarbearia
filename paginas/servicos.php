@@ -42,7 +42,7 @@
       <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
         Além da técnica apurada, oferecemos atendimento exclusivo e ambiente acolhedor para você relaxar e se transformar com estilo e segurança.
       </p>
-      <a href="?param=agendamento" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg mt-3 hover-grow">
+      <a href="agendamento" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg mt-3 hover-grow">
         Agende seu horário agora
       </a>
     </div>
