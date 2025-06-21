@@ -43,22 +43,43 @@
               <div class="invalid-feedback">Escolha uma data válida.</div>
             </div>
 
-            <div class="mb-4">
+            <div class="mb-3">
               <label for="time" class="form-label">Horário</label>
               <select class="form-select bg-dark text-light border-secondary" id="time" name="time" required>
                 <option value="" disabled selected>Selecione um horário</option>
                 <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
                 <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
                 <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
                 <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
+                <option value="11:30">11:30</option>
                 <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
                 <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
                 <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
                 <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
                 <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
               </select>
               <div class="invalid-feedback">Escolha um horário.</div>
+            </div>
+
+            <!-- NOVO CAMPO: OBSERVAÇÕES -->
+            <div class="mb-4">
+              <label for="obs" class="form-label">Observações (opcional)</label>
+              <textarea class="form-control bg-dark text-white border-secondary" id="obs" name="obs" rows="3" placeholder="Ex: Só vou cortar os lados"></textarea>
             </div>
 
             <button type="submit" class="btn btn-warning w-100 fw-bold text-dark">
@@ -75,7 +96,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form-agendamento");
 
-    // Impede envio se houver campos inválidos
     form.addEventListener("submit", function (event) {
       if (!form.checkValidity() || !dataValida()) {
         event.preventDefault();
@@ -84,7 +104,6 @@
       form.classList.add("was-validated");
     });
 
-    // Impede data anterior a hoje
     function dataValida() {
       const inputData = document.getElementById("date");
       const dataSelecionada = new Date(inputData.value);
@@ -98,5 +117,5 @@
         return true;
       }
     }
-  });
+  });
 </script>
