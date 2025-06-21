@@ -7,7 +7,9 @@
     <title>Barbearia LK</title>
     <link rel="icon" href="imagens/ico.ico" type="image/x-icon">
 
-    <base href="http://localhost/sitebarbearia/barbearialk/base ?>">
+    <!-- Corrigi a tag base, removendo o ?> que estava errado -->
+    <base href="http://localhost/sitebarbearia/barbearialk/" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
@@ -26,7 +28,7 @@
     }
 
     .logo {
-      width: 55px;
+        width: 55px;
     }
 
     .text-warning {
@@ -98,7 +100,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="home">
+                <a class="navbar-brand d-flex align-items-center" href="?param=home">
                     <img src="imagens/icone.png" class="logo" alt="Logo">
                     <strong>Barbearia LK</strong>
                 </a>
@@ -108,12 +110,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="home">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicos">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?param=home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?param=sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?param=servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?param=galeria">Galeria</a></li>
                     </ul>
-                    <a href="agendamento" class="btn btn-gold ms-lg-3">Agendar Horário</a>
+                    <a href="?param=agendamento" class="btn btn-gold ms-lg-3">Agendar Horário</a>
                 </div>
             </div>
         </nav>
@@ -121,18 +123,18 @@
         <!-- CONTEÚDO -->
         <main class="container flex-fill my-5 pt-5">
             <?php
-        $pagina = $_GET["param"] ?? "home";
-        $param = explode("/", $pagina);
-        $pagina = $param[0];
-        $id = $param[1] ?? null;
+            $pagina = $_GET["param"] ?? "home";
+            $param = explode("/", $pagina);
+            $pagina = $param[0];
+            $id = $param[1] ?? null;
 
-        $pagina = "paginas/{$pagina}.php";
-        if (file_exists($pagina)) {
-            include $pagina;
-        } else {
-            include "paginas/erro.php";
-        }
-      ?>
+            $arquivo = "paginas/{$pagina}.php";
+            if (file_exists($arquivo)) {
+                include $arquivo;
+            } else {
+                include "paginas/erro.php";
+            }
+            ?>
         </main>
 
         <!-- FOOTER -->
@@ -141,7 +143,7 @@
                 <div class="row gy-4 justify-content-between">
                     <div class="col-md-4">
                         <h5 class="text-warning fw-bold mb-3">Barbearia LK</h5>
-                        <p class="small text-muted">
+                        <p class="small text-muted"><span class="text-white">
                             Transformando seu estilo com excelência e dedicação há mais de 2 anos.
                             Barbearia que valoriza tradição, modernidade e atendimento personalizado.
                         </p>
@@ -150,35 +152,27 @@
                     <div class="col-md-3">
                         <h6 class="text-warning fw-semibold mb-3">Links Rápidos</h6>
                         <ul class="list-unstyled">
-                            <li><a href="?param=home" class="text-light text-decoration-none hover-warning">Início</a>
-                            </li>
-                            <li><a href="?param=sobre" class="text-light text-decoration-none hover-warning">Sobre</a>
-                            </li>
-                            <li><a href="?param=servicos"
-                                    class="text-light text-decoration-none hover-warning">Serviços</a></li>
-                            <li><a href="?param=galeria"
-                                    class="text-light text-decoration-none hover-warning">Galeria</a></li>
+                            <li><a href="home" class="text-light text-decoration-none hover-warning">Início</a></li>
+                            <li><a href="sobre" class="text-light text-decoration-none hover-warning">Sobre</a></li>
+                            <li><a href="servicos" class="text-light text-decoration-none hover-warning">Serviços</a></li>
+                            <li><a href="galeria" class="text-light text-decoration-none hover-warning">Galeria</a></li>
                         </ul>
                     </div>
 
                     <div class="col-md-4">
                         <h6 class="text-warning fw-semibold mb-3">Contato & Redes Sociais</h6>
                         <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i> (44) 99869-1352</p>
-                        <p class="small mb-3"><i class="bi bi-envelope-fill me-2"></i> contato@estilofino.com</p>
+                        <p class="small mb-3"><i class="bi bi-envelope-fill me-2"></i> contato@.com</p>
                         <div class="d-flex gap-3">
-
-                            <a href="https://www.instagram.com/barbearia_lk01/" class="text-warning fs-5"
-                                aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-warning fs-5" aria-label="WhatsApp" target="_blank"><i
-                                    class="bi bi-whatsapp"></i></a>
-
+                            <a href="https://www.instagram.com/barbearia_lk01/" class="text-warning fs-5" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="text-warning fs-5" aria-label="WhatsApp" target="_blank"><i class="bi bi-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <hr class="border-warning mt-5" />
                 <div class="text-center small text-muted">
-                    &copy; <?= date('Y') ?> Barbearia LK. Todos os direitos reservados.
+                   <span class="text-warning"> &copy; <?= date('Y') ?><span class="text-warning"> Barbearia LK. Todos os direitos reservados.
                 </div>
             </div>
         </footer>
