@@ -2,17 +2,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agendamento</title>
-
-    <!-- Bootstrap e ícones -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Choices.js para selects -->
     <link href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" />
-
-    <!-- Flatpickr Datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
 </head>
 
 <style>
@@ -93,8 +84,7 @@ body {
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold">Agendar <span class="text-warning">Horário</span></h2>
-            <p class="text-muted fs-5"><span class="text-warning">Reserve seu horário de forma rápida e
-                    prática</span></p>
+            <p class="text-muted fs-5"><span class="text-warning">Reserve seu horário de forma rápida e prática</span></p>
         </div>
 
         <div class="mx-auto" style="max-width: 500px;">
@@ -118,16 +108,26 @@ body {
                         </div>
 
                         <div class="mb-3">
-                            <label for="service" class="form-label">Serviço</label>
+                            <label for="service" class="form-label">Serviço Principal</label>
                             <select class="form-select" id="service" name="service" required>
                                 <option value="" disabled selected>Selecione um serviço</option>
                                 <option value="Corte Social">Corte Social</option>
                                 <option value="Corte Degradê">Corte Degradê</option>
-                                <option value="Barba Completa">Barba</option>
-                                <option value="Sobrancelha">Sobrancelha</option>
                                 <option value="Platinado">Platinado</option>
                                 <option value="Luzes">Luzes</option>
                             </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label d-block">Serviços Adicionais (opcional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Barba" id="add-barba" name="adicionais[]">
+                                <label class="form-check-label" for="add-barba">Barba</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Sobrancelha" id="add-sobrancelha" name="adicionais[]">
+                                <label class="form-check-label" for="add-sobrancelha">Sobrancelha</label>
+                            </div>
                         </div>
 
                         <div class="mb-3">
@@ -172,7 +172,6 @@ body {
     </div>
 </section>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -191,7 +190,6 @@ document.addEventListener("DOMContentLoaded", function() {
         itemSelectText: ''
     });
 
-
     flatpickr(inputData, {
         minDate: "today",
         dateFormat: "Y-m-d",
@@ -208,6 +206,15 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
+        // 🔧 VALIDAÇÃO ESPECIAL: serviço principal opcional se houver adicionais
+        const servicoPrincipal = form.service;
+        const adicionaisSelecionados = document.querySelectorAll('input[name="adicionais[]"]:checked');
+        if (!servicoPrincipal.value && adicionaisSelecionados.length > 0) {
+            servicoPrincipal.required = false;
+        } else {
+            servicoPrincipal.required = true;
+        }
+
         if (!form.checkValidity()) {
             form.classList.add("was-validated");
             return;
@@ -220,10 +227,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const horario = form.time.value;
         const obs = form.obs.value.trim();
 
+        const adicionais = [];
+        const checkboxes = document.querySelectorAll('input[name="adicionais[]"]:checked');
+        checkboxes.forEach(cb => adicionais.push(cb.value));
+
         const msg = `*Agendamento Barbearia LK*%0A%0A` +
             `*Nome:* ${nome}%0A` +
             `*Telefone:* ${telefone}%0A` +
-            `*Serviço:* ${servico}%0A` +
+            `*Serviço:* ${servico || '(somente adicional)'}${adicionais.length ? " + " + adicionais.join(", ") : ""}%0A` +
             `*Data:* ${data}%0A` +
             `*Horário:* ${horario}%0A` +
             `*Observações:* ${obs || 'Nenhuma'}%0A`;
@@ -234,3 +245,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+

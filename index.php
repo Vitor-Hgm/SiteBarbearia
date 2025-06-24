@@ -12,7 +12,7 @@ $base = "https://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbearia LK</title>
     <link rel="icon" href="imagens/ico.ico" type="image/x-icon">
-    <base href="https://barbearialk.great-site.net/">
+     <base href="http://localhost/sitebarbearia/barbearialk/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,10 +117,10 @@ $base = "https://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="?param=home">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="?param=sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="?param=servicos">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="?param=galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria">Galeria</a></li>
                     </ul>
                     <a href="agendamento" class="btn btn-gold ms-lg-3">Agendar Horário</a>
                 </div>
@@ -159,7 +159,7 @@ $base = "https://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
                         </p>
                     </div>
 
-                    <!-- Coluna 2: Links rápidos -->
+                   
                     <div class="col-md-3">
                         <h6 class="text-warning fw-semibold mb-3">Links Rápidos</h6>
                         <ul class="list-unstyled">
@@ -171,7 +171,7 @@ $base = "https://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
                         </ul>
                     </div>
 
-                    <!-- Coluna 3: Contato e redes -->
+        
                     <div class="col-md-4">
                         <h6 class="text-warning fw-semibold mb-3">Contato & Localização</h6>
                         <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i> (44) 99869-1352</p>
