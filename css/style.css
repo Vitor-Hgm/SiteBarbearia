@@ -54,7 +54,6 @@ h2, h4 {
   color: #000;
 }
 
-/* Navbar toggler maior para toque */
 .navbar-toggler {
   padding: 0.5rem 0.75rem;
   font-size: 1.25rem;
@@ -64,18 +63,17 @@ h2, h4 {
   white-space: nowrap;
 }
 
-/* Links da navbar maiores e com padding confortável */
 .nav-link {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
 
-/* Melhor alinhamento e espaçamento dos links com ícones */
+
 .nav-link.d-flex {
   gap: 0.5rem;
 }
 
-/* Hover sutil para ícones sociais do footer */
+
 .social-icon {
   transition: color 0.3s ease;
 }
@@ -85,17 +83,12 @@ h2, h4 {
   text-decoration: none;
 }
 
-/* Hover dourado para todos os links a, exceto os com classe .no-gold */
 a:hover:not(.no-gold), a:focus:not(.no-gold) {
   color: #f5b942 !important;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* Ajuste geral para mobile */
-
-
-/* Tamanhos responsivos para display-5 */
 @media (max-width: 767px) {
   .btn-gold {
     padding: 0.5rem 1.5rem;
@@ -111,12 +104,6 @@ a:hover:not(.no-gold), a:focus:not(.no-gold) {
     font-size: 1rem;
   }
 }
-
-/* Melhor alinhamento do botão agendar desktop */
-
-
-
-/* Hover nos links rápidos do footer */
 .hover-warning:hover {
   color: #f5b942 !important;
   text-decoration: underline;

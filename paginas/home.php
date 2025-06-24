@@ -45,7 +45,7 @@
         <div class="feature-card">
           <i class="bi bi-star-fill text-warning fs-1 mb-3"></i>
           <h5 class="fw-bold mb-2">Avaliações Positivas</h5>
-          <p class="text-muted small mb-0">Clientes recomendam nossa qualidade</p>
+          <p class="text-muted small mb-0">Excelentes feedbacks dos clientes</p>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <p class="fs-5 mx-auto" style="max-width: 650px;">
       Profissionais dedicados e apaixonados pelo que fazem, garantindo um atendimento exclusivo do início ao fim.
     </p>
-    <a href="servicos" class="btn btn-outline-warning mt-3 px-4 fw-semibold">
+    <a href="servicos" class="btn btn-warning btn-lg px-5 fw-semibold shadow pulse-hover">
       Conheça nossos serviços
     </a>
   </div>
@@ -88,7 +88,7 @@
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   h1.display-3 {
     font-size: 2.2rem;
   }
