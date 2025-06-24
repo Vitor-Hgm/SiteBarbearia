@@ -35,7 +35,7 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="?param=contato" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg" role="button">
+      <a href="contato" class="btn btn-lg btn-warning px-5 fw-semibold shadow-lg" role="button">
         Quer agendar? Fale conosco!
       </a>
     </div>

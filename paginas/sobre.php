@@ -10,7 +10,7 @@
           Sobre a <span class="text-warning">Barbearia LK</span>
         </h2>
         <p class="fs-5 mb-3" style="line-height: 1.6;">
-          Alex, um jovem de 19 anos, após concluir um curso de barbeiro, decidiu abrir sua própria barbearia. Hoje, atuando há quase 1 ano, conquistou excelentes resultados com um ótimo serviço.
+          Alex um jovem de 19 anos que concluiu curso de barbeiro, decidiu se arriscar e abrir sua própria barbearia. Hoje atuando há quase 1 ano conquistou excelentes resultados com seu ótimo serviço, atraindo cada vez mais clientes para sua barbearia.
         </p>
         <p class="fs-5 mb-4" style="line-height: 1.6;">
           A <strong>Barbearia LK</strong> vem se destacando com serviços de corte masculino, barba e atendimento personalizado. Nossa missão é elevar sua autoestima com um toque de sofisticação.
